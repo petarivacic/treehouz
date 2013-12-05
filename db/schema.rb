@@ -11,9 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131205031137) do
+ActiveRecord::Schema.define(version: 20131205040038) do
 
   create_table "demos", force: true do |t|
+    t.string   "handle"
+    t.string   "fb_id"
+    t.string   "message"
+    t.string   "picture"
+    t.string   "link"
+    t.string   "created"
+    t.string   "updated"
+    t.string   "shares"
+    t.string   "likes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "scrapes", force: true do |t|
+    t.string   "handle"
+    t.string   "fb_id"
+    t.string   "message"
+    t.string   "picture"
+    t.string   "link"
+    t.string   "created"
+    t.string   "updated"
+    t.string   "shares"
+    t.string   "likes"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

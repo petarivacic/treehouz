@@ -1,6 +1,6 @@
-class CreateDemos < ActiveRecord::Migration
+class CreateScrapes < ActiveRecord::Migration
   def change
-    create_table :demos do |t|
+    create_table :scrapes do |t|
       t.string :handle
       t.string :fb_id
       t.string :message
@@ -10,7 +10,6 @@ class CreateDemos < ActiveRecord::Migration
       t.string :updated
       t.string :shares
       t.string :likes
-
       t.timestamps
     end
   end
